@@ -7,7 +7,7 @@
 void node_to_remove(int, struct Graph*);
 
 
-void init_graph(struct Graph*, char*);
+void init(struct Graph*, char*);
 void add_node(int, struct Graph*);
 void print_graph(struct Graph*);
 void delete_graph(struct Graph*);
@@ -179,7 +179,7 @@ void remove_edge(int src, int dest, struct Graph *graph) {
     }
 }
 
-void init_graph(struct Graph *graph, char *curr_char)
+void init(struct Graph *graph, char *curr_char)
 {
     int num_of_nodes;
     scanf(" %d", &num_of_nodes);
